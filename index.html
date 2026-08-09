@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ページの文字コードと表示領域を設定 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>一般常識クイズ</title>
+    <!-- 外部CSSを読み込む -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- アプリ全体の中央配置コンテナ -->
+    <main class="app">
+      <!-- クイズカード本体 -->
+      <div class="quiz-card">
+        <!-- 現在の問題数表示 -->
+        <p class="quiz-count" id="quiz-count">問題 1 / 5</p>
+        <!-- 問題文が入る要素 -->
+        <h1 id="question-text">問題文</h1>
+
+        <!-- 選択肢を動的に挿入するコンテナ -->
+        <div id="choices" class="choices" aria-live="polite"></div>
+
+        <!-- 正解・不正解のフィードバック表示 -->
+        <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+
+        <!-- 最終結果の棒グラフを表示する領域 -->
+        <div id="chart-wrapper" class="chart-wrapper hidden">
+          <canvas id="scoreChart" aria-label="クイズスコアの棒グラフ"></canvas>
+        </div>
+
+        <!-- 次の問題へ進むボタン -->
+        <button id="next-btn" class="primary-btn hidden" type="button">
+          次の問題へ
+        </button>
+        <!-- リスタート用ボタン -->
+        <button id="restart-btn" class="primary-btn hidden" type="button">
+          もう一度挑戦
+        </button>
+        <!-- 終了用ボタン -->
+        <button id="finish-btn" class="primary-btn hidden" type="button">
+          終了する
+        </button>
+      </div>
+    </main>
+
+    <!-- Chart.js を読み込む -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- JavaScriptを読み込む -->
+    <script src="script.js"></script>
+  </body>
+</html>
