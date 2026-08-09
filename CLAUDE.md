@@ -97,3 +97,6 @@ quiz-app/
 - このプロジェクトは小規模な教育・娯楽用途の HTML/CSS/JavaScript アプリとして設計する
 - 依存ライブラリは必要最小限に抑え、シンプルな構造を優先する
 - 実装中は、コピー元のコンテンツや既存の作品を再利用しないことを常に意識する
+
+## GitHubリポジトリ
+https://github.com/S-Yamada-prv/quiz-app
